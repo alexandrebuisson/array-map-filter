@@ -24,6 +24,11 @@ Sortie attendue:
  */
 
 function keepStarks(names) {
+  const regex = new RegExp("/Stark", 'g' )
+   return names.filter(name => {
+    const splittedName = name.split(' ')
+    return splittedName[1] === 'Stark';
+  })
 }
 
 // Ne pas modifier l'export

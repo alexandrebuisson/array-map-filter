@@ -1,4 +1,4 @@
-/* Array.prototype.map - Exercice 2
+              /* Array.prototype.map - Exercice 2
 
 Ecrire une fonction getFoodCategories qui reçoit comme un argument un tableau
 d'objets.
@@ -43,6 +43,9 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
+  return foods.map(food => (food.isVegetarian) ? food.food + ' is suitable for vegetarians' : food.food + ' is not suitable for vegetarians' );
+
+
 }
 
 
